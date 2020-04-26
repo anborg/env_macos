@@ -1,0 +1,2 @@
+
+${KIBANA_BIN}/kibana --config ${KIBANA_CONFIG_DIR}/kibana.yml

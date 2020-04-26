@@ -1,0 +1,2 @@
+
+${METRICBEAT_BIN}/metricbeat run --path.config=${METRICBEAT_CONFIG_DIR} --path.logs=/var/tmp/elasticsearch-metricbeat/logs  

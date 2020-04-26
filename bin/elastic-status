@@ -1,1 +1,8 @@
+echo "Master:"
+curl -X GET "localhost:9200/_cat/master?v&pretty"
+echo "Health:"
 curl -X GET "localhost:9200/_cat/health?v&pretty"
+echo "Indices:"
+curl -X GET "localhost:9200/_cat/indices/twi*?v&s=index&pretty"
+echo "Plugins:"
+curl -X GET "localhost:9200/_cat/plugins?v&s=component&h=name,component,version,description&pretty"
