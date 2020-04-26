@@ -1,0 +1,10 @@
+brew tap elastic/tap
+
+brew install elastic/tap/elasticsearch-full
+#elastic/tap/elasticsearch-oss
+#HOME =>/usr/local/var/homebrew/linked/elasticsearch-full
+# CONF -> /usr/local/etc/elasticsearch/elasticsearch.yml
+
+# data
+#/usr/local/var/lib/elasticsearch/data1 <- path.data=data1
+/usr/local/var/log/elasticsearch/logs1 <- path.logs=logs1

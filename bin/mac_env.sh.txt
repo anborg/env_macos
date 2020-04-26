@@ -1,0 +1,19 @@
+#!/bin/zsh
+
+#SETUP CORE
+export PATH="$PATH":${ENV_HOME}/bin
+#touch ${ENV_HOME}/bin/mac_env.sh.txt
+chmod ugo+rx ${ENV_HOME}/bin/*
+
+
+#GLOALG SETUP
+export GOPATH="/Volumes/data01/projects/projects_go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+echo "Go proj: ${GOPATH}"
+
+#Elasticsearch
+export ELASTICSEARCH_CONFIG_DIR=${ENV_HOME}/elastic_conf
+export ELASTICSEARCH_BIN=/Volumes/data01/apps/elasticsearch-7.6.2/bin 
+echo "elastic conf : ${ELASTICSEARCH_CONFIG_DIR}"
+
