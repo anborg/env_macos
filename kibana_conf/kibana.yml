@@ -31,6 +31,7 @@ kibana:
   defaultAppId: "home"
 
 # pid.file: /var/run/kibana.pid
+
 # logging:
 #   dest: stdout
 #   silent: false

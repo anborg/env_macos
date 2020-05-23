@@ -1,0 +1,3 @@
+#CATALINA_HOME=${TOMCAT_HOME}
+CATALINA_BASE=${ENV_HOME}/tomcat_camunda
+${TOMCAT_HOME}/bin/shutdown.sh

@@ -1,3 +1,4 @@
+action.auto_create_index: ".app-search-*-logs-*,-.app-search-*,+*"
 # ======================== Elasticsearch Configuration =========================
 
 # Please consult the documentation for further information on configuration options:
@@ -23,6 +24,9 @@ bootstrap:
   # host: 192.168.0.1
 http:
   port: 9200
+  cors:
+    enabled: true
+    allow-origin: "*"
 # ----------------------------------- Memory -----------------------------------
 # Lock the memory on startup:
 #

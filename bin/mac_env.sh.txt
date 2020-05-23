@@ -1,27 +1,4 @@
 #!/bin/zsh
 
-#SETUP CORE
-export APPS_DIR="/Volumes/data01/apps"
 
-export PATH="$PATH":${ENV_HOME}/bin
-#touch ${ENV_HOME}/bin/mac_env.sh.txt
-chmod ugo+rx ${ENV_HOME}/bin/*
-
-
-#GLOALG SETUP
-export GOPATH="/Volumes/data01/projects/projects_go"
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
-echo "Go proj: ${GOPATH}"
-
-#ElasticSearch-Kibana-Metric
-export ELASTICSEARCH_CONFIG_DIR=${ENV_HOME}/elastic_conf
-export ELASTICSEARCH_BIN=/Volumes/data01/apps/elasticsearch-7.6.2/bin 
-echo "elastic conf : ${ELASTICSEARCH_CONFIG_DIR}"
-export ELASTICSEARCH_CONFIG_DIR=${ENV_HOME}/elastic_conf
-
-export KIBANA_BIN=${APPS_DIR}/elasticsearch-kibana-7.6.2-darwin-x86_64/bin
-export KIBANA_CONFIG_DIR=${ENV_HOME}/kibana_conf
-
-export METRICBEAT_BIN=${APPS_DIR}/elasticsearch-metricbeat-7.6.2-darwin-x86_64
-export METRICBEAT_CONFIG_DIR=${ENV_HOME}/metricbeat_conf
+# ==== reorganize this ----------
