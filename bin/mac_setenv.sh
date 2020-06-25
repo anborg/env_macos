@@ -32,7 +32,10 @@ export PATH="${APPS_DIR}/hashicorp/bin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 
-
+#Rust setup 
+export CARGO_HOME="/Volumes/data01/apps/rust-home/.cargo"
+export RUSTUP_HOME="/Volumes/data01/apps/rust-home/.rustup"
+export PATH=$PATH:${CARGO_HOME}/bin
 
 
 #GLOALG SETUP

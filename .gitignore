@@ -1,2 +1,17 @@
 .DS_Store
 .idea/
+/apache-manifoldcf-2.15-bin.tar.gz
+/camunda-bpm-tomcat-7.12.0.zip
+/tomcat_flowable/work/Catalina/localhost/
+/tomcat_flowable/webapps/flowable-admin/
+/tomcat_flowable/webapps/flowable-idm/
+/tomcat_flowable/webapps/flowable-modeler/
+/tomcat_flowable/webapps/flowable-rest/
+/tomcat_flowable/webapps/flowable-task/
+/tomcat_flowable/logs/*
+/apache-manifoldcf-2.15/
+/tomcat_camunda/webapps/
+/tomcat_camunda/lib/
+/tomcat_camunda/logs/
+/tomcat_camunda/bin/
+/tomcat_camunda/work/
