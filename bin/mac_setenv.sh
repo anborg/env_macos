@@ -12,7 +12,7 @@ chmod ugo+rx ${ENV_HOME}/bin/*
 ### Shortcut tools/commands -- revise sourcep later
 alias sourcep="source ${ENV_HOME}/bin/mac_setenv.sh"
 export PATH="/usr/local/sbin:$PATH"
-
+#alias idea="/Volumes/data01/apps/idea.app/Contents/bin/restarter"
 
 
 #TOOLS
@@ -61,6 +61,9 @@ export METRICBEAT_CONFIG_DIR=${ENV_HOME}/metricbeat_conf
 
 #Tomcat 
 export TOMCAT_HOME=${APPS_DIR}/apache-tomcat-9.0.34
+
+#Imagemagic - brew install imagemagic@6
+export PATH=$PATH:/usr/local/opt/imagemagick@6/bin
 
 #-------- Quick Actions --------
 alias code="${APPS_DIR}/vscode.app/Contents/MacOS/Electron"
