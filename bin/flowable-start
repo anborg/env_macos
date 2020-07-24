@@ -1,3 +1,4 @@
+echo "Starting flowable at"
 export CATALINA_HOME=${TOMCAT_HOME}
 export CATALINA_BASE=${ENV_HOME}/tomcat_flowable
 ${TOMCAT_HOME}/bin/startup.sh

@@ -4,7 +4,7 @@ export APPS_DIR="/Volumes/data01/apps"
 export ENV_HOME="${APPS_DIR}/env_macos"
 #source ${ENV_HOME}/bin/mac_setenv.sh
 
-export PATH="$PATH":${ENV_HOME}/bin
+export PATH=$PATH:${ENV_HOME}/bin
 #touch ${ENV_HOME}/bin/mac_setenv.sh #ENV_HOME is defined in .zhrc
 chmod ugo+rx ${ENV_HOME}/bin/*
 
