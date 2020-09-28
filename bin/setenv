@@ -1,24 +1,32 @@
-## To Copy paste from mac_setenv.sh to to ~/.zshrc
-#ENVIRONMENT MACOS - To copy paste these two lies to ~/.zshrc
+#!/bin/zsh
+
+
+#ENVIRONMENT MACOS - Copy paste these two lies to ~/.zshrc
 export APPS_DIR="/Volumes/data01/apps"
 export ENV_HOME="${APPS_DIR}/env_macos"
-#source ${ENV_HOME}/bin/mac_setenv.sh
+#source ${ENV_HOME}/bin/setenv.sh
 
 export PATH=$PATH:${ENV_HOME}/bin
-#touch ${ENV_HOME}/bin/mac_setenv.sh #ENV_HOME is defined in .zhrc
+#touch ${ENV_HOME}/bin/setenv.sh #ENV_HOME is defined in .zhrc
 chmod ugo+rx ${ENV_HOME}/bin/*
 
 #alias core 
 ### Shortcut tools/commands -- revise sourcep later
-alias sourcep="source ${ENV_HOME}/bin/mac_setenv.sh"
+alias sourcep="source ${ENV_HOME}/bin/setenv.sh"
 export PATH="/usr/local/sbin:$PATH"
 #alias idea="/Volumes/data01/apps/idea.app/Contents/bin/restarter"
 
 
 #TOOLS
-alias python="python3"
+#Node & NVM : https://github.com/nvm-sh/nvm/blob/master/README.md#installing-and-updating
+# install cmd : curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # ANACONDA 
 export PATH="/usr/local/anaconda3/bin:$PATH"
+alias python="/usr/local/anaconda3/bin/python"
 
 #flutter
 export PATH="${APPS_DIR}/flutter/bin:$PATH"
@@ -61,12 +69,13 @@ export METRICBEAT_CONFIG_DIR=${ENV_HOME}/metricbeat_conf
 
 #Tomcat 
 export TOMCAT_HOME=${APPS_DIR}/apache-tomcat-9.0.34
+echo "tomcat home : ${TOMCAT_HOME}"
 
 #Imagemagic - brew install imagemagic@6
 export PATH=$PATH:/usr/local/opt/imagemagick@6/bin
 
 #-------- Quick Actions --------
-alias code="${APPS_DIR}/vscode.app/Contents/MacOS/Electron"
+alias code="${APPS_DIR}/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 
 alias edit-env="code ${ENV_HOME}"
 alias goto-env="cd ${ENV_HOME}"

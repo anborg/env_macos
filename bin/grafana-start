@@ -1,0 +1,13 @@
+echo "Starting Grafana"
+#/usr/local/bin/grafana-server
+export GRAFANA_HOME=$ENV_HOME/grafana_conf
+export GRAFANA_CONF=$GRAFANA_HOME/conf/grafana.ini
+
+
+export GRAFANA_LOG_DIR=$GRAFANA_HOME/logs
+export GRAFANA_DATA_DIR=$GRAFANA_HOME/data
+export GRAFANA_PLUGINS_DIR=$GRAFANA_HOME/plugins
+#
+echo "cmd grafana-server --config=$GRAFANA_CONF --homepath=$GRAFANA_HOME --packaging=brew cfg:default.paths.logs=$GRAFANA_LOG_DIR cfg:default.paths.data=$GRAFANA_DATA_DIR cfg:default.paths.plugins=$GRAFANA_PLUGINS_DIR"
+
+grafana-server --config=$GRAFANA_CONF --homepath $GRAFANA_HOME  cfg:default.paths.logs=$GRAFANA_LOG_DIR cfg:default.paths.data=$GRAFANA_DATA_DIR cfg:default.paths.plugins=$GRAFANA_PLUGINS_DIR
