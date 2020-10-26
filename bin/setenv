@@ -20,9 +20,9 @@ export PATH="/usr/local/sbin:$PATH"
 #TOOLS
 #Node & NVM : https://github.com/nvm-sh/nvm/blob/master/README.md#installing-and-updating
 # install cmd : curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # ANACONDA 
 export PATH="/usr/local/anaconda3/bin:$PATH"
@@ -37,7 +37,7 @@ export PATH="${APPS_DIR}/hashicorp/bin:$PATH"
 #complete -o nospace -C /usr/local/bin/vault vault
 
 #Dart webdev cache path
-export PATH="$PATH":"$HOME/.pub-cache/bin"
+#export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 
 #Rust setup 
@@ -77,5 +77,5 @@ export PATH=$PATH:/usr/local/opt/imagemagick@6/bin
 #-------- Quick Actions --------
 alias code="${APPS_DIR}/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 
-alias edit-env="code ${ENV_HOME}"
-alias goto-env="cd ${ENV_HOME}"
+alias editenv="code ${ENV_HOME}"
+alias gotoenv="cd ${ENV_HOME}"
