@@ -1,5 +1,6 @@
 export CONSUL_HOME=$ENV_HOME/consul_conf
 
-#consul agent  -data-dir $CONSUL_HOME/data_dir -config-dir $CONSUL_HOME/conf
-#consul agent -config-dir $CONSUL_HOME/consul.d/bootstrap
+#docker run --rm --name consul -p 8500:8500 -p 8501:8501 consul:1.7 agent -dev -ui -client=0.0.0.0 -bind=0.0.0.0 --https-port=8501
+consul connect proxy -sidecar-for socat &
+consul connect proxy -service m-app-rest -upstream socat:9191
 consul agent -dev -config-dir $CONSUL_HOME/consul.d/server

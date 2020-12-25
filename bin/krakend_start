@@ -1,0 +1,3 @@
+export KRAKEND_HOME=$ENV_HOME/krakend_conf
+
+krakend run -c $KRAKEND_HOME/krakend.json -d 
