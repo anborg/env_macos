@@ -1,0 +1,5 @@
+export CONSUL_HOME=$ENV_HOME/consul_conf
+
+#consul agent  -data-dir $CONSUL_HOME/data_dir -config-dir $CONSUL_HOME/conf
+#consul agent -config-dir $CONSUL_HOME/consul.d/bootstrap
+consul agent -dev -config-dir $CONSUL_HOME/consul.d/server

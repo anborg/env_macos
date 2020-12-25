@@ -75,7 +75,8 @@ echo "tomcat home : ${TOMCAT_HOME}"
 export PATH=$PATH:/usr/local/opt/imagemagick@6/bin
 
 #-------- Quick Actions --------
-alias code="${APPS_DIR}/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
-
+alias code="${APPS_DIR}/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+#/usr/local/bin/code
+#/usr/local/bin/code -> /Volumes/data01/apps/Visual\_Studio Code.app/Contents/Resources/app/bin/code
 alias editenv="code ${ENV_HOME}"
 alias gotoenv="cd ${ENV_HOME}"

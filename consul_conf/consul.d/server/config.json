@@ -1,0 +1,10 @@
+{
+    "bootstrap": false,
+    "server": true,
+    "datacenter": "nyc2_local",
+    "data_dir": "/Volumes/data01/apps/env_macos/consul_conf/data_dir",
+    "encrypt": "OhPvFJ0Cp97JAPFhKLtHWGetHUYLlI2qb01DtWuq3RQ=",
+    "log_level": "INFO",
+    "enable_syslog": true,
+    "start_join": ["127.0.0.1"]
+}
