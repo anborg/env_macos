@@ -1,0 +1,2 @@
+echo "Stopping caddy :  http://localhost:2019"
+caddy stop

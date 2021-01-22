@@ -1,0 +1,7 @@
+#brew install caddy
+echo "Starting caddy :  https://localhost:2015"
+#caddy run 
+CERT_DIR=${ENV_HOME}/cert
+export CERT_FILE=${CERT_DIR}/pkml01.crt
+export CERT_FILE=${CERT_DIR}/pkml01.key
+caddy run --config ${ENV_HOME}/caddy_conf/Caddyfile

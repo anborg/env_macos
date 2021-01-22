@@ -1,0 +1,6 @@
+
+PKML01:2015 {
+  #bind PKML01
+  reverse_proxy  127.0.0.1:3000
+  tls {$ENV_HOME}/cert/pkml01.crt {$ENV_HOME}/cert/pkml01.key
+}
