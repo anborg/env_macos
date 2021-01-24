@@ -1,6 +1,11 @@
 
 PKML01:2015 {
   #bind PKML01
-  reverse_proxy  127.0.0.1:3000
+
+
+  handle_path /apps/* {
+    rewrite * /*
+    reverse_proxy 127.0.0.1:4455
+  }
   tls {$ENV_HOME}/cert/pkml01.crt {$ENV_HOME}/cert/pkml01.key
 }

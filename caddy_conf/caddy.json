@@ -1,0 +1,28 @@
+{
+	"apps": {
+		"http": {
+			"servers": {
+				"PKML01": {
+					"listen": [":2015"],
+					"routes": [
+						{
+							"handle": [{
+								"handler": "static_response",
+								"body": "Hello, world!"
+							}]
+						}
+					]
+				}
+			}
+		}
+    },
+    "admin": {
+		"disabled": false,
+		"listen": "",
+		"enforce_origin": false,
+		"origins": [""],
+		"config": {
+			"persist": false
+		}
+	}
+}
